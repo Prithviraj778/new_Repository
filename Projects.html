@@ -1,9 +1,75 @@
 <!Doctype html>
 <html>
 <head>
+
    <title> CSS</title>
    <link rel="StyleSheet" href="home.css">
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </head>
+<style>
+  #Qualification .Qualification {
+	flex-direction: column;
+	text-align: center;
+	max-width: 1400px;
+	margin: 0 auto;
+	padding: 25px;
+}
+#Qualification .service-top {
+	max-width: 1500px;
+	margin: 0 auto;
+}
+#Qualification .service-bottom {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+	margin-top: 50px;
+}
+#Qualification .service-item {
+	flex-basis: 80%;
+	display: flex;
+	align-items: flex-start;
+	justify-content: center;
+	flex-direction: column;
+	padding: 30px;
+	border-radius: 10px;
+	background-image: url(./img/img-1.png);
+	background-size: cover;
+	margin: 10px 5%;
+	position: relative;
+	z-index: 1;
+	overflow: hidden;
+}
+#Qualification .service-item::after {
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 100%;
+	width: 100%;
+	background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+	opacity: .9;
+	z-index: -1;
+}
+#Qualification .service-bottom .icon {
+	height: 80px;
+	width: 80px;
+	margin-bottom: 20px;
+}
+#Qualification .service-item h2 {
+	font-size: 2rem;
+	color: white;
+	margin-bottom: 10px;
+	text-transform: uppercase;
+}
+#Qualification .service-item p {
+	color: white;
+	text-align: left;
+}
+</style>
 <body>
    <header>
    <h1> MY  PORTFOLIO  PROFILE </h1>
@@ -17,3 +83,27 @@
       <li><a href="Contact.html" target_"self">Contact</a></li>
   </ul>
    </h2>
+   <div class="Epic">
+   <img src="3.PNG" class="float-right" alt="Puzzle Game" width="550" height="550"> 
+  </div>
+
+   <!-------Project section-->
+   <ul class="list-group">
+    <li class="list-group-item active bg-dark" aria-current="true"> <b>Project Name</b> </li>
+    <li class="list-group-item"><b>Puzzle Game-</b>  Which is build in python language</li>
+    <li class="list-group-item"> <b> Duration of the project:</b> 45 Days</li>
+    <li class="list-group-item"> <b>Technologies used:</b> Backend-python,Frontend-Html,Web browser, Database-Resouces from Internet</li>
+    <li class="list-group-item"> <b> Brief Description:</b>The Puzzle Game In Python is written in python programming language,This Puzzle Game Code In Python, there is a 4*4 board with 15 level. The numbers are then shuffled randomly. In this project i explored many things, you can also know how to create a Memory Puzzle Game In Python.A game Python Puzzle Game has steps to be follow,  first is to move the number tiles into the empty tile space the tiles are back in their original order from 1-15.</li>
+  </ul>
+   <div>
+  
+ 
+ 
+   <div class="footer">
+    <footer><b>
+          &copy; PrithviRaj2021</b>
+       </footer>
+    </div>>
+</body>
+</html>
+
